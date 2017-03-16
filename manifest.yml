@@ -41,6 +41,13 @@ dependencies:
   md5: cddcef7446e96ab89020e32ab421a926
   cf_stacks:
   - cflinuxfs2
+  - opensusefs2
+- name: bundler
+  version: 1.14.3
+  uri: https://s3.amazonaws.com/cf-opensusefs2/bundler-1.14.3-3d068b5.tgz
+  md5: 597189ac398bc608849b345c11734711
+  cf_stacks:
+  - opensusefs2
 - name: openjdk1.8-latest
   version: 1.8.0_121
   uri: https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_121.tar.gz
@@ -65,6 +72,12 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.3.3-linux-x64-636d81f2.tgz
   cf_stacks:
   - cflinuxfs2
+- name: ruby
+  version: 2.3.3
+  md5: 4f78706dacc3fcfdec0acd58205ff60f
+  uri: https://s3.amazonaws.com/cf-opensusefs2/ruby-2.3.3-linux-x64-5bf828e.tgz
+  cf_stacks:
+  - opensusefs2
 - name: ruby
   version: 2.2.5
   uri: https://buildpacks.cloudfoundry.org/dependencies/ruby/ruby-2.2.5-linux-x64-64c71b2c.tgz
@@ -113,6 +126,12 @@ dependencies:
   md5: 031aca2e41da97fc614eed20af9814cb
   cf_stacks:
   - cflinuxfs2
+#- name: node
+#  version: 4.7.3
+#  uri: https://s3.amazonaws.com/jandubois/node-4.7.3-linux-x64-f82a3af.tar.gz
+#  md5: d02c0a494d12eff0f0f5dcb1632f87b8
+#  cf_stacks:
+#  - opensusefs2
 exclude_files:
 - ".git/"
 - ".gitignore"
